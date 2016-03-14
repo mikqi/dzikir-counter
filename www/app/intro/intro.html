@@ -1,0 +1,29 @@
+<ion-view view-title="Intro" hide-nav-bar="true">
+  <!-- do you want padding -->
+  <ion-content>
+
+    <ion-slide-box class="intro-container">
+      <ion-slide class="intro-content">
+        <div class="box intro-item">
+          <h1>Lorem ipsum.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quibusdam quisquam sed voluptas. Atque, autem.</p>
+          <a ui-sref="main.listdzikir">listdzikir</a>
+        </div>
+      </ion-slide>
+      <ion-slide class="intro-content">
+        <div class="box intro-item">
+          <h1>Lorem ipsum.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, soluta.</p>
+        </div>
+      </ion-slide>
+      <ion-slide class="intro-content">
+        <div class="box intro-item">
+          <h1>Lorem ipsum.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eveniet, nostrum ullam cum.</p>
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+
+    <button class="button button-full button-calm intro-button" on-tap="intro.start()" ui-sref="main.listdzikir" nav-direction="forward">Lets Zikir</button>
+  </ion-content>
+</ion-view>
