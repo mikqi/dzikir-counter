@@ -1,0 +1,20 @@
+<ion-view view-title="Stat Dzikir">
+  <ion-content>
+    <div class="list">
+
+      <a class="item item-icon-left" href="#" ng-repeat="d in dzikir">
+        <i class="icon ion-android-calendar"></i>
+        <h2>{{d.dzikir}}</h2>
+        <p>
+          {{d.date | date: 'medium'}}
+        </p>
+        <span class="badge badge-positive" style="top:33%">{{d.jumlahDzikir}}</span>
+      </a>
+
+    </div>
+  </ion-content>
+
+  <div class="bar bar-footer bar-assertive">
+    <div class="title" ng-click="clear()">Clear Stats</div>
+  </div>
+</ion-view>
