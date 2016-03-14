@@ -24,64 +24,49 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic.contrib.drawer
 })
 
 .config(function ($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+  // ROUTING with ui.router
+  $urlRouterProvider.otherwise('/main/list');
   $stateProvider
+    .state('intro', {
+      url: '/intro',
+      templateUrl: 'app/intro/intro.html',
+      controller: 'IntroCtrl as intro',
 
-    .state('app', {
-    url: '/app',
-    abstract: true,
-    templateUrl: 'templates/menu.html',
-    controller: 'AppCtrl',
-  })
+      // controllerAs: 'intro'
+    })
 
-  .state('app.dzikir', {
-    url: '/dzikir',
-    views: {
-      menuContent: {
-        templateUrl: 'templates/dzikir.html',
-        controller: 'CounterCtrl',
-      },
-    },
-  })
-
-  .state('app.counter', {
-      url: '/counter',
+    // this state is placed in the <ion-nav-view> in the index.html
+    .state('main', {
+      url: '/main',
+      abstract: true,
+      templateUrl: '../templates/menu.html',
+      controller: 'MenuCtrl as menu',
+    })
+    .state('main.listdzikir', {
+      url: '/list',
       views: {
-        menuContent: {
-          templateUrl: 'templates/counter.html',
-          controller: 'CounterCtrl',
+        pageContent: {
+          templateUrl: 'app/list-dzikir/list-dzikir.html',
+          controller: 'ListDzikir as list',
         },
       },
     })
-    .state('app.stat-dzikir', {
-      url: '/stat-dzikir',
+    .state('main.asmaul', {
+      url: '/asmaul',
       views: {
-        menuContent: {
-          templateUrl: 'templates/stat-dzikir.html',
-          controller: 'StatDzikirCtrl',
+        pageContent: {
+          templateUrl: 'app/asmaul-husna/asmaul.html',
+          controller: 'AsmaulCtrl as asmaul',
         },
       },
     })
-
-  .state('app.news-detail', {
-    url: '/news/:id',
-    views: {
-      menuContent: {
-        templateUrl: 'templates/news-detail.html',
-        controller: 'NewsDetailCtrl',
+    .state('main.statistik', {
+      url: '/statistik',
+      views: {
+        pageContent: {
+          templateUrl: 'app/statistik/statistik-dzikir.html',
+          controller: 'StatistikCtrl as stat',
+        },
       },
-    },
-  })
-
-  .state('app.news', {
-    url: '/news',
-    views: {
-      menuContent: {
-        templateUrl: 'templates/news.html',
-        controller: 'NewsCtrl',
-      },
-    },
-  });
-
-  // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/dzikir');
+    });
 });
