@@ -1,0 +1,43 @@
+.intro-container{
+  background-color: $stable;
+  height: 100%;
+}
+
+.intro-item{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15%;
+}
+
+.intro-item h1 {
+  color: $calm;
+  text-align: center;
+}
+
+.intro-item p {
+  text-align: center;
+  color: $black !important;
+}
+
+.intro-button{
+  position: absolute;
+  bottom:0;
+  margin: 0 !important;
+  font-size: 1.5em
+}
+
+.intro-button:after{
+  bottom: 0;
+}
+
+.slider-pager{
+  bottom: 10%;
+}
+
+.slider-pager .slider-pager-page {
+  color: $calm;
+}
