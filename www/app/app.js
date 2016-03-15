@@ -60,6 +60,15 @@ angular.module('DzikirCounter', ['ionic'])
         },
       },
     })
+    .state('main.artikel', {
+      url: '/artikel',
+      views: {
+        pageContent: {
+          templateUrl: 'app/article/article.html',
+          controller: 'ArticleCtrl as artikel',
+        },
+      },
+    })
     .state('main.statistik', {
       url: '/statistik',
       views: {

@@ -1,0 +1,52 @@
+.artikel-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.artikel-item{
+  width: 45%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 2px 0 2px;
+}
+
+.artikel-item h2,
+.artikel-item p{
+  margin-bottom: 0;
+}
+
+.artikel-item h2 {
+  font-size: 1.7em;
+  color: $stable;
+}
+
+.artikel-item p {
+  font-size: 1em;
+}
+
+.artikel-item:hover{
+  cursor: pointer;
+}
+
+.bg-positive {
+  background-color: $positive;
+}
+
+.bg-assertive {
+  background-color: $assertive;
+}
+
+.bg-balanced {
+  background-color: $balanced;
+}
+
+.bg-energized {
+  background-color: $energized;
+}
