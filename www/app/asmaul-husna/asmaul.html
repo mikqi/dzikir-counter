@@ -1,4 +1,10 @@
 <ion-view view-title="Asmaul Husna">
   <ion-content>
+    <div class="list card" ng-repeat="a in asmaul.asmaul">
+      <a class="item" href="javascript:;">
+        <h2>{{a.arab}}</h2>
+        <p>{{a.latin}}</p>
+      </a>
+    </div>
   </ion-content>
 </ion-view>

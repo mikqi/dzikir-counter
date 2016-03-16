@@ -1,4 +1,5 @@
 .dzikir-container {
+  background: $stable;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -7,14 +8,18 @@
 }
 
 .dzikir-item{
-  background: #aeaeae;
-  width: 110px;
-  height: 110px;
+  background: #ffffff;
+  width: 90%;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5px 2px 0 2px;
+  margin: 0 2px 20px 2px;
+}
+
+.dzikir-item:first-child{
+  margin-top: 20px;
 }
 
 .dzikir-item h2,
@@ -23,11 +28,22 @@
 }
 
 .dzikir-item h2 {
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 .dzikir-item p {
-  font-size: .8em;
+  padding-top: 10px;
+  font-size: 1.2em;
+  text-transform: lowercase;
+  font-style: italic;
+}
+
+.dzikir-item p::before{
+  content: '( ';
+}
+
+.dzikir-item p::after{
+  content: ' )';
 }
 
 .dzikir-item:hover{

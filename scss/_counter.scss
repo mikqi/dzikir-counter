@@ -1,0 +1,23 @@
+.counter-container {
+  background: $stable;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.counter-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-content h1 {
+  margin: 0;
+}
+
+.count{
+  font-size: 10rem;
+}

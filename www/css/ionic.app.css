@@ -9882,6 +9882,7 @@ ion-slide {
   background-color: #69D2E7; }
 
 .dzikir-container {
+  background: #f8f8f8;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -9889,24 +9890,36 @@ ion-slide {
   flex-wrap: wrap; }
 
 .dzikir-item {
-  background: #aeaeae;
-  width: 110px;
-  height: 110px;
+  background: #ffffff;
+  width: 90%;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5px 2px 0 2px; }
+  margin: 0 2px 20px 2px; }
+
+.dzikir-item:first-child {
+  margin-top: 20px; }
 
 .dzikir-item h2,
 .dzikir-item p {
   margin-bottom: 0; }
 
 .dzikir-item h2 {
-  font-size: 1.5em; }
+  font-size: 1.8em; }
 
 .dzikir-item p {
-  font-size: .8em; }
+  padding-top: 10px;
+  font-size: 1.2em;
+  text-transform: lowercase;
+  font-style: italic; }
+
+.dzikir-item p::before {
+  content: '( '; }
+
+.dzikir-item p::after {
+  content: ' )'; }
 
 .dzikir-item:hover {
   cursor: pointer; }
@@ -9953,6 +9966,46 @@ ion-slide {
 
 .bg-energized {
   background-color: #EDC951; }
+
+.shadow-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s ease-in-out; }
+
+.shadow-1:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.shadow-2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.shadow-3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.shadow-4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+.shadow-5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+
+.counter-container {
+  background: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%; }
+
+.counter-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.counter-content h1 {
+  margin: 0; }
+
+.count {
+  font-size: 10rem; }
 
 .bar-header {
   border: 0px !important;

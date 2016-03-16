@@ -51,6 +51,15 @@ angular.module('DzikirCounter', ['ionic'])
         },
       },
     })
+    .state('main.dzikir', {
+      url: '/list/:arab/:latin',
+      views: {
+        pageContent: {
+          templateUrl: 'app/dzikir/dzikir.html',
+          controller: 'DzikirCtrl as zikir',
+        },
+      },
+    })
     .state('main.asmaul', {
       url: '/asmaul',
       views: {

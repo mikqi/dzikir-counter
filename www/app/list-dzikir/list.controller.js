@@ -4,9 +4,10 @@ angular
   .module('DzikirCounter')
   .controller('ListDzikir', ListDzikir);
 
-ListDzikir.$inject = ['$log', '$state'];
-
-function ListDzikir($log, $state) {
+ListDzikir.$inject = ['$log', '$state', 'ListDzikirService'];
+function ListDzikir($log, $state, ListDzikirService) {
   var vm = this;
-  vm.hello = 'hello';
+  vm.ListDzikir = ListDzikirService.getListDzikir();
+
+  console.log(vm.list);
 }
