@@ -1,5 +1,5 @@
 .counter-container {
-  background: $stable;
+  background: $calm;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -12,12 +12,42 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 80%;
+  h1 {
+    margin: 0;
+    color: $stable;
+  }
+  .latin {
+    color: $stable;
+    text-transform: lowercase;
+    font-style: italic;
+    &::before {
+      content: '( ';
+    }
+    &::after {
+      content: ' )';
+    }
+  }
 }
 
-.counter-content h1 {
-  margin: 0;
+.counter-info {
+  text-align: center;
+  font-size: 2em;
+  color: $stable;
+  margin-bottom: 15%;
+}
+
+.counter-target {
+  color: $stable;
 }
 
 .count{
   font-size: 10rem;
+}
+
+.separator {
+  display: block;
+  width: 60%;
+  height: 7px;
+  background-color: $stable;
 }

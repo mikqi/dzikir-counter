@@ -10,7 +10,7 @@ function StatistikCtrl($log) {
   var vm = this;
   vm.hello = 'hellow';
 
-  vm.labels = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
+  vm.labels = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum\'at', 'Sabtu', 'Minggu'];
   vm.series = ['Series A', 'Series B'];
 
   vm.data = [

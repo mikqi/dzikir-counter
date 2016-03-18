@@ -17,6 +17,7 @@ function DzikirCtrl($state, $stateParams) {
   function counter() {
     if (vm.count >= 33) {
       vm.count = 0;
+      $state.go('main.listdzikir');
       return vm.count;
     } else {
       vm.count += 1;

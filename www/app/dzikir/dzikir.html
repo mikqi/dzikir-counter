@@ -1,9 +1,13 @@
-<ion-view view-title="{{zikir.dzikir.latin}}">
+<ion-view view-title="{{zikir.dzikir.latin}}" hide-nav-bar="true">
   <ion-content ng-click="zikir.counter()">
     <div class="counter-container">
       <div class="counter-content">
+        <h2 class="counter-info">Sentuh layar untuk mulai menghitung</h2>
         <h1 class="title">{{zikir.dzikir.arab}}</h1>
         <h1 class="count">{{zikir.count}}</h1>
+        <div class="separator"> </div>
+        <h3 class="counter-target">dari 33</h3>
+        <h2 class="latin">{{zikir.dzikir.latin}}</h2>
       </div>
     </div>
   </ion-content>

@@ -9988,7 +9988,7 @@ ion-slide {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
 
 .counter-container {
-  background: #f8f8f8;
+  background: #69D2E7;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -10000,13 +10000,37 @@ ion-slide {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  width: 80%; }
+  .counter-content h1 {
+    margin: 0;
+    color: #f8f8f8; }
+  .counter-content .latin {
+    color: #f8f8f8;
+    text-transform: lowercase;
+    font-style: italic; }
+    .counter-content .latin::before {
+      content: '( '; }
+    .counter-content .latin::after {
+      content: ' )'; }
 
-.counter-content h1 {
-  margin: 0; }
+.counter-info {
+  text-align: center;
+  font-size: 2em;
+  color: #f8f8f8;
+  margin-bottom: 15%; }
+
+.counter-target {
+  color: #f8f8f8; }
 
 .count {
   font-size: 10rem; }
+
+.separator {
+  display: block;
+  width: 60%;
+  height: 7px;
+  background-color: #f8f8f8; }
 
 .asmaul {
   direction: rtl; }
