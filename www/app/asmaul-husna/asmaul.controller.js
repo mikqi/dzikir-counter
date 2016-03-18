@@ -15,6 +15,16 @@ function AsmaulCtrl($log, $state, AsmaulHusnaService) {
     vm.asmaul = data.data;
   }
 
+  vm.goTo = goTo;
+
+  function goTo(arab, latin) {
+    console.log(arab, latin);
+    $state.go('main.dzikir', {
+      arab: arab,
+      latin: latin,
+    });
+  }
+
   vm.start = start;
 
   function start() {

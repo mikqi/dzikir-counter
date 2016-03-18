@@ -9872,7 +9872,7 @@ ion-slide {
   text-transform: uppercase; }
 
 .view-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(https://unsplash.it/1366/800?image=974) fixed center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/side-menu.jpeg) fixed center center no-repeat;
   background-size: cover; }
 
 .view {
@@ -10006,6 +10006,12 @@ ion-slide {
 
 .count {
   font-size: 10rem; }
+
+.asmaul {
+  direction: rtl; }
+
+.asmaul .item .h2 {
+  font-size: 2em; }
 
 .bar-header {
   border: 0px !important;
