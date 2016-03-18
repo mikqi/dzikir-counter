@@ -9750,6 +9750,7 @@ a.button {
   text-align: center; }
 
 .intro-item p {
+  font-size: 1.5em;
   text-align: center;
   color: #f8f8f8 !important; }
 
@@ -9956,17 +9957,25 @@ ion-slide {
 .artikel-item:hover {
   cursor: pointer; }
 
-.bg-positive {
-  background-color: #4a87ee; }
+.artikel-info {
+  color: #69D2E7;
+  font-weight: 300; }
 
-.bg-assertive {
-  background-color: #CC333F; }
+.artikel-hadist {
+  background: url("../img/bg_foto_quran.png") no-repeat center center;
+  background-size: cover; }
 
-.bg-balanced {
-  background-color: #23C869; }
+.artikel-aqidah {
+  background: url("../img/bg_foto_akhlaq.png") no-repeat center center;
+  background-size: cover; }
 
-.bg-energized {
-  background-color: #EDC951; }
+.artikel-fiqih {
+  background: url("../img/bg_foto_fiqih.png") no-repeat center center;
+  background-size: cover; }
+
+.artikel-qalbu {
+  background: url("../img/bg_foto_qalbu.png") no-repeat center center;
+  background-size: cover; }
 
 .shadow-1 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -10046,3 +10055,15 @@ ion-slide {
 
 .transparent {
   background: transparent; }
+
+.bg-positive {
+  background-color: #4a87ee; }
+
+.bg-assertive {
+  background-color: #CC333F; }
+
+.bg-balanced {
+  background-color: #23C869; }
+
+.bg-energized {
+  background-color: #EDC951; }

@@ -50,3 +50,20 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .transparent{
   background: transparent;
 }
+
+
+.bg-positive {
+  background-color: $positive;
+}
+
+.bg-assertive {
+  background-color: $assertive;
+}
+
+.bg-balanced {
+  background-color: $balanced;
+}
+
+.bg-energized {
+  background-color: $energized;
+}

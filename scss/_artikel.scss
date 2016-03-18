@@ -35,18 +35,27 @@
   cursor: pointer;
 }
 
-.bg-positive {
-  background-color: $positive;
+.artikel-info {
+  color: $calm;
+  font-weight: 300;
 }
 
-.bg-assertive {
-  background-color: $assertive;
+.artikel-hadist {
+  background: url('../img/bg_foto_quran.png') no-repeat center center;
+  background-size: cover;
 }
 
-.bg-balanced {
-  background-color: $balanced;
+.artikel-aqidah {
+  background: url('../img/bg_foto_akhlaq.png') no-repeat center center;
+  background-size: cover;
 }
 
-.bg-energized {
-  background-color: $energized;
+.artikel-fiqih {
+  background: url('../img/bg_foto_fiqih.png') no-repeat center center;
+  background-size: cover;
+}
+
+.artikel-qalbu {
+  background: url('../img/bg_foto_qalbu.png') no-repeat center center;
+  background-size: cover;
 }
