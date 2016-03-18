@@ -1,9 +1,10 @@
 <ion-view view-title="Asmaul Husna">
   <ion-content>
-    <div class="list card asmaul" ng-repeat="a in asmaul.asmaul" ng-click="asmaul.goTo(a.arab, a.latin)">
+    <div class="list asmaul" ng-repeat="a in asmaul.asmaul" ng-click="asmaul.goTo(a.arab, a.latin)">
       <a class="item" href="javascript:;">
         <h2>{{a.arab}}</h2>
         <p>{{a.latin}}</p>
+        <span class="badge badge-assertive">0</span>
       </a>
     </div>
   </ion-content>
