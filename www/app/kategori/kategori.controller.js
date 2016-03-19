@@ -8,11 +8,12 @@ function KategoriCtrl($state, $stateParams, KategoriService) {
 
   KategoriService.getArticles($stateParams.kategori).then(getList);
   function getList(data) {
-    data.data.data.forEach((e, i) => {
-      data.data.data[i].post.forEach((e, j) => {
+    data.data.data.forEach(function (e, i) {
+      data.data.data[i].post.forEach(function (e, j) {
         data.data.data[i].artikel.push({ post: data.data.data[i].post[j].trim(), url: data.data.data[i].url[j] });
       });
     });
+
     vm.articles = data.data;
     console.log(vm.articles);
     console.log(data);
@@ -23,17 +24,19 @@ function KategoriCtrl($state, $stateParams, KategoriService) {
   function goToArticle(parentIndex, index) {
     console.log(parentIndex, index);
 
-    // console.log(vm.articles.data[parentIndex].artikel[index]);
+    console.log(vm.articles.data[parentIndex].artikel[index]);
 
     // i 5, 6
     var article = {
-      path1: vm.articles.data[parentIndex].artikel[index].url.split('/')[4],
-      path2: vm.articles.data[parentIndex].artikel[index].url.split('/')[5],
+      path: vm.articles.data[parentIndex].artikel[index].url.split('/')[4],
+      title: vm.articles.data[parentIndex].artikel[index].url.split('/')[5],
     };
     console.log(article);
 
-    // console.log(vm.articles.data[parentIndex].artikel[index].url.split('/'));
-
+    $state.go('main.articledetail', {
+      path: article.path,
+      title: article.title,
+    });
   }
 
   vm.title = $stateParams.kategori.toUpperCase();

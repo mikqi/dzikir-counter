@@ -89,6 +89,15 @@ angular.module('DzikirCounter', ['ionic', 'chart.js'])
         },
       },
     })
+    .state('main.articledetail', {
+      url: '/artikel/:path/:title',
+      views: {
+        pageContent: {
+          templateUrl: 'app/article-detail/article-detail.html',
+          controller: 'ArticleDetailCtrl as detail',
+        },
+      },
+    })
     .state('main.statistik', {
       url: '/statistik',
       views: {
