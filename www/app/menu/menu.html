@@ -1,0 +1,37 @@
+<ion-side-menus enable-menu-with-back-views="false">
+
+  <!-- CONTENT -->
+  <ion-side-menu-content>
+
+    <!-- header bar -->
+    <!-- the nav bar will be updated as we navigate between views -->
+    <ion-nav-bar class="bar-calm">
+      <!-- back button, shown if applicable -->
+      <ion-nav-back-button></ion-nav-back-button>
+      <!-- nav button, shown if applicable -->
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <!-- ROUTING INJECTED HERE: pageContent -->
+    <ion-nav-view name="pageContent"></ion-nav-view>
+
+  </ion-side-menu-content>
+
+  <!-- SIDEMENU -->
+  <ion-side-menu class="transparent" side="left">
+
+    <ion-content>
+      <ul class="list">
+        <a ui-sref="main.listdzikir" class="item side-menu-item transparent side-menu" menu-close>List Dzikir</a>
+        <a ui-sref="main.asmaul" class="item side-menu-item transparent side-menu" menu-close>Asmaul Husna</a>
+        <a ui-sref="main.artikel" class="item side-menu-item transparent side-menu" menu-close>Artikel</a>
+        <a ui-sref="main.statistik" class="item side-menu-item transparent side-menu" menu-close>Statistik</a>
+        <a ui-sref="intro" class="item side-menu-item transparent side-menu" menu-close>Walkthrough</a>
+      </ul>
+    </ion-content>
+
+  </ion-side-menu>
+
+</ion-side-menus>

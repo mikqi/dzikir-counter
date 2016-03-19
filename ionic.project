@@ -1,6 +1,6 @@
 {
   "name": "dzikir-counter",
-  "app_id": "",
+  "app_id": "51011e52",
   "gulpStartupTasks": [
     "sass",
     "watch"

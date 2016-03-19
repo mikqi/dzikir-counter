@@ -39,7 +39,7 @@ angular.module('DzikirCounter', ['ionic', 'chart.js'])
     .state('main', {
       url: '/main',
       abstract: true,
-      templateUrl: '../templates/menu.html',
+      templateUrl: 'app/menu/menu.html',
       controller: 'MenuCtrl as menu',
     })
     .state('main.listdzikir', {
