@@ -1,7 +1,42 @@
 .asmaul {
-  direction: rtl;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
 }
 
 .asmaul .item .h2 {
   font-size: 2em;
+}
+
+.asmaul-number,
+.asmaul-content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.asmaul-number {
+  width: 30%;
+  border-right: 1px solid #dadada;
+  h2 {
+    font-size: 4em;
+    color: $black;
+  }
+}
+
+.asmaul-content {
+  width: 80%;
+  .latin {
+    font-size: 1.2em;
+    font-style: italic;
+    &::before {
+      content: '( ';
+    }
+    &::after {
+      content: ' )';
+    }
+  }
 }

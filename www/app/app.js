@@ -78,6 +78,17 @@ angular.module('DzikirCounter', ['ionic', 'chart.js'])
         },
       },
     })
+
+    // RANDOM NAMING -.-
+    .state('main.kategori', {
+      url: '/artikel/:kategori',
+      views: {
+        pageContent: {
+          templateUrl: 'app/kategori/kategori.html',
+          controller: 'KategoriCtrl as kategori',
+        },
+      },
+    })
     .state('main.statistik', {
       url: '/statistik',
       views: {

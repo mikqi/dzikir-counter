@@ -13,6 +13,10 @@
   justify-content: center;
   align-items: center;
   width: 80%;
+  .title {
+    width: 100%;
+    text-align: center;
+  }
   h1 {
     margin: 0;
     color: $stable;
@@ -39,6 +43,8 @@
 
 .counter-target {
   color: $stable;
+  width: 100%;
+  text-align: center;
 }
 
 .count{

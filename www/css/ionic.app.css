@@ -9747,6 +9747,7 @@ a.button {
 
 .intro-item h1 {
   color: #f8f8f8;
+  width: 100%;
   text-align: center; }
 
 .intro-item p {
@@ -9959,7 +9960,9 @@ ion-slide {
 
 .artikel-info {
   color: #69D2E7;
-  font-weight: 300; }
+  font-weight: 300;
+  width: 100%;
+  text-align: center; }
 
 .artikel-hadist {
   background: url("../img/bg_foto_quran.png") no-repeat center center;
@@ -9976,6 +9979,15 @@ ion-slide {
 .artikel-qalbu {
   background: url("../img/bg_foto_qalbu.png") no-repeat center center;
   background-size: cover; }
+
+.articles-group {
+  direction: rtl;
+  color: #547980; }
+
+.articles-content {
+  font-size: 1.4em;
+  font-weight: bold;
+  padding-bottom: 40px; }
 
 .shadow-1 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -10011,6 +10023,9 @@ ion-slide {
   justify-content: center;
   align-items: center;
   width: 80%; }
+  .counter-content .title {
+    width: 100%;
+    text-align: center; }
   .counter-content h1 {
     margin: 0;
     color: #f8f8f8; }
@@ -10030,7 +10045,9 @@ ion-slide {
   margin-bottom: 15%; }
 
 .counter-target {
-  color: #f8f8f8; }
+  color: #f8f8f8;
+  width: 100%;
+  text-align: center; }
 
 .count {
   font-size: 10rem; }
@@ -10042,10 +10059,38 @@ ion-slide {
   background-color: #f8f8f8; }
 
 .asmaul {
-  direction: rtl; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center; }
 
 .asmaul .item .h2 {
   font-size: 2em; }
+
+.asmaul-number,
+.asmaul-content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center; }
+
+.asmaul-number {
+  width: 30%;
+  border-right: 1px solid #dadada; }
+  .asmaul-number h2 {
+    font-size: 4em;
+    color: #547980; }
+
+.asmaul-content {
+  width: 80%; }
+  .asmaul-content .latin {
+    font-size: 1.2em;
+    font-style: italic; }
+    .asmaul-content .latin::before {
+      content: '( '; }
+    .asmaul-content .latin::after {
+      content: ' )'; }
 
 .bar-header {
   border: 0px !important;

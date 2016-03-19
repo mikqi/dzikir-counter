@@ -9,9 +9,9 @@ ArticleCtrl.$inject = ['$log', '$state'];
 function ArticleCtrl($log, $state) {
   var vm = this;
 
-  vm.start = start;
+  vm.toKategori = toKategori;
 
-  function start() {
-    $state.go('main.listdzikir');
+  function toKategori(kategori) {
+    $log.log(kategori);
   }
 }

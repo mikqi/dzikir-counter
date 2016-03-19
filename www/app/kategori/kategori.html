@@ -1,0 +1,20 @@
+<ion-view view-title="{{kategori.articles.pathTitle}}">
+  <ion-content>
+
+    <div ng-repeat="articles in kategori.articles.data">
+
+      <div ng-repeat="article in articles.artikel">
+        <div class="card" ng-click="kategori.goToArticle($parent.$index ,$index)">
+          <div class="item articles-group">
+            {{articles.groupTitle}}
+          </div>
+          <div class="item item-text-wrap articles-content">
+            <em>
+              {{article.post}}
+            </em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

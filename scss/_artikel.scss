@@ -38,6 +38,8 @@
 .artikel-info {
   color: $calm;
   font-weight: 300;
+  width: 100%;
+  text-align: center;
 }
 
 .artikel-hadist {
@@ -58,4 +60,15 @@
 .artikel-qalbu {
   background: url('../img/bg_foto_qalbu.png') no-repeat center center;
   background-size: cover;
+}
+
+.articles-group {
+  direction: rtl;
+  color: $black;
+}
+
+.articles-content {
+  font-size: 1.4em;
+  font-weight: bold;
+  padding-bottom: 40px;
 }
