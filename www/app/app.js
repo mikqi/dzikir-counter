@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('DzikirCounter', ['ionic', 'chart.js'])
+angular.module('DzikirCounter', ['ionic', 'chart.js', 'ngCordova'])
 
 .run(function ($ionicPlatform) {
   $ionicPlatform.ready(function () {
@@ -25,7 +25,7 @@ angular.module('DzikirCounter', ['ionic', 'chart.js'])
 
 .config(function ($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
   // ROUTING with ui.router
-  $urlRouterProvider.otherwise('/main/list');
+  $urlRouterProvider.otherwise('/intro');
   $stateProvider
     .state('intro', {
       url: '/intro',

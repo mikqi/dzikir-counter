@@ -4,7 +4,7 @@ angular
 
 ArticleDetailService.$inject = ['$q', '$http'];
 function ArticleDetailService($q, $http) {
-  var detailUrl = 'http://codelabs-islamicapps.azurewebsites.net/';
+  var detailUrl = 'https://codelabs-islamicapps.azurewebsites.net/';
   return {
     getArticle: getArticle,
   };

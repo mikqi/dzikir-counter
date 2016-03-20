@@ -1,0 +1,38 @@
+// TODO : LODASH
+
+var tujuhHari = _.filter(data, function (o) {
+  return _.lte(o.jsDate, today) && _.gte(o.jsDate, sevenDaysAgo);
+});
+
+var enamHari = _.filter(data, function (o) {
+  return _.lte(o.jsDate, fiveDaysAgo) && _.gte(o.jsDate, sixDaysAgo);
+});
+
+var limaHari = _.filter(data, function (o) {
+  return _.lte(o.jsDate, fourDaysAgo) && _.gte(o.jsDate, fiveDaysAgo);
+});
+
+var empatHari = _.filter(data, function (o) {
+  return _.lte(o.jsDate, threeDaysAgo) && _.gte(o.jsDate, fourDaysAgo);
+});
+
+var tigaHari = _.filter(data, function (o) {
+  return _.lte(o.jsDate, twoDaysAgo) && _.gte(o.jsDate, threeDaysAgo);
+});
+
+var duaHari = _.filter(data, function (o) {
+  return _.lte(o.jsDate, oneDaysAgo) && _.gte(o.jsDate, twoDaysAgo);
+});
+
+var satuHari = _.filter(data, function (o) {
+  return _.lte(o.jsDate, today) && _.gte(o.jsDate, oneDaysAgo);
+});
+
+// Filter Days
+var sevenDaysAgo = new Date(today.getTime() - (7 * 24 * 60 * 60 * 1000));
+var sixDaysAgo = new Date(today.getTime() - (6 * 24 * 60 * 60 * 1000));
+var fiveDaysAgo = new Date(today.getTime() - (5 * 24 * 60 * 60 * 1000));
+var fourDaysAgo = new Date(today.getTime() - (4 * 24 * 60 * 60 * 1000));
+var threeDaysAgo = new Date(today.getTime() - (3 * 24 * 60 * 60 * 1000));
+var twoDaysAgo = new Date(today.getTime() - (2 * 24 * 60 * 60 * 1000));
+var oneDaysAgo = new Date(today.getTime() - (1 * 24 * 60 * 60 * 1000));

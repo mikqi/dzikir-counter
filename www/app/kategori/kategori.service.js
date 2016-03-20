@@ -4,7 +4,7 @@ angular
 
 KategoriService.$inject = ['$q', '$http'];
 function KategoriService($q, $http) {
-  var url = 'http://codelabs-islamicapps.azurewebsites.net/';
+  var url = 'https://codelabs-islamicapps.azurewebsites.net/';
   return {
     getArticles: getArticles,
   };

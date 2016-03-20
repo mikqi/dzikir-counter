@@ -2,12 +2,17 @@ angular
   .module('DzikirCounter')
   .controller('KategoriCtrl', KategoriCtrl);
 
-KategoriCtrl.$inject = ['$state', '$stateParams', 'KategoriService'];
-function KategoriCtrl($state, $stateParams, KategoriService) {
+KategoriCtrl.$inject = ['$state', '$stateParams', 'KategoriService', '$ionicLoading'];
+function KategoriCtrl($state, $stateParams, KategoriService, $ionicLoading) {
   var vm = this;
+
+  $ionicLoading.show({
+    template: '<ion-spinner icon="android" class="spinner-calm"> </ion-spinner>',
+  });
 
   KategoriService.getArticles($stateParams.kategori).then(getList);
   function getList(data) {
+    $ionicLoading.hide();
     data.data.data.forEach(function (e, i) {
       data.data.data[i].post.forEach(function (e, j) {
         data.data.data[i].artikel.push({ post: data.data.data[i].post[j].trim(), url: data.data.data[i].url[j] });

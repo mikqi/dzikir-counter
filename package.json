@@ -16,7 +16,16 @@
   },
   "cordovaPlugins": [
     "cordova-plugin-splashscreen",
-    "ionic-plugin-keyboard"
+    "ionic-plugin-keyboard",
+    {
+      "locator": "https://github.com/apache/cordova-plugin-whitelist.git",
+      "id": "cordova-plugin-whitelist"
+    },
+    {
+      "locator": "https://github.com/pbernasconi/cordova-progressIndicator.git",
+      "id": "org.pbernasconi.progressindicator"
+    },
+    "cordova-plugin-vibration"
   ],
   "cordovaPlatforms": [
     "ios",
