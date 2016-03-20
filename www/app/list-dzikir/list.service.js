@@ -1,3 +1,5 @@
+// TODO: REDESIGN LIST DZIKIR
+
 angular
   .module('DzikirCounter')
   .factory('ListDzikirService', ListDzikirService);
@@ -73,7 +75,7 @@ function ListDzikirService($state) {
     }, {
       arab: 'وَصَلَّى اللهُ عَلى سَيِّدِنَا مُحَمَّدٍ وَعَلى آلِهِ وَصَحْبِهِ وَسَلَّمَ وَالْحَمْدُ ِللهِ رَبِّ الْعَالَمِيْنَ',
       latin: 'Washallallaahu ‘alaa sayyidinaa muhamma-din wa’alaa allihiwa shahbihiiwa sallam, wal hamdu lillaahirabbil ‘aalamiin.',
-    }
+    },
 
   ];
     return list;

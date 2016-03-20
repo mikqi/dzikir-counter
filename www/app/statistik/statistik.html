@@ -1,8 +1,51 @@
 <!-- TODO: BENERIN STATISTIK, BUAT ALGORITMA BUAT STATISTIK -->
 
-<ion-view view-title="Statistik Dzikir">
- <ion-content scroll="false">
-    <ion-slide-box show-pager="false" ion-slide-tabs>
+<ion-view view-title="Statistik Dzikir" cache-view="false">
+  <ion-content>
+    <ion-refresher pulling-text="Lepas untuk menyegarkan..." on-refresh="stat.doRefresh()"></ion-refresher>
+    <div class="padding">
+      7 Hari Sebelumnya
+      <canvas class="chart chart-line" chart-data="stat.data" chart-labels="stat.labels" chart-series="stat.series"></canvas>
+      <div class="list">
+        <a class="item item-icon-left" href="#">
+          <i class="icon ion-ios-analytics-outline"></i>
+          Hari ini
+          <span class="badge badge-calm">{{stat.stat.satuHari}}</span>
+        </a>
+        <a class="item item-icon-left" href="#">
+          <i class="icon ion-ios-analytics-outline"></i>
+          2 Hari lalu
+          <span class="badge badge-calm">{{stat.stat.duaHari}}</span>
+        </a>
+        <a class="item item-icon-left" href="#">
+          <i class="icon ion-ios-analytics-outline"></i>
+          3 Hari lalu
+          <span class="badge badge-calm">{{stat.stat.tigaHari}}</span>
+        </a>
+        <a class="item item-icon-left" href="#">
+          <i class="icon ion-ios-analytics-outline"></i>
+          4 Hari lalu
+          <span class="badge badge-calm">{{stat.stat.empatHari}}</span>
+        </a>
+        <a class="item item-icon-left" href="#">
+          <i class="icon ion-ios-analytics-outline"></i>
+          5 Hari lalu
+          <span class="badge badge-calm">{{stat.stat.enamHari}}</span>
+        </a>
+        <a class="item item-icon-left" href="#">
+          <i class="icon ion-ios-analytics-outline"></i>
+          6 Hari lalu
+          <span class="badge badge-calm">{{stat.stat.tujuhHari}}</span>
+        </a>
+        <a class="item item-icon-left" href="#">
+          <i class="icon ion-ios-analytics-outline"></i>
+          7 Hari lalu
+          <span class="badge badge-calm">{{stat.stat.satuHari}}</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- <ion-slide-box show-pager="false" ion-slide-tabs>
       <ion-slide ion-slide-tab-label="Hari Ini">
         <div class="padding">
           Hari Ini
@@ -19,6 +62,6 @@
           Total
         </div>
       </ion-slide>
-    </ion-slide-box>
+    </ion-slide-box> -->
   </ion-content>
 </ion-view>

@@ -36,3 +36,7 @@ var fourDaysAgo = new Date(today.getTime() - (4 * 24 * 60 * 60 * 1000));
 var threeDaysAgo = new Date(today.getTime() - (3 * 24 * 60 * 60 * 1000));
 var twoDaysAgo = new Date(today.getTime() - (2 * 24 * 60 * 60 * 1000));
 var oneDaysAgo = new Date(today.getTime() - (1 * 24 * 60 * 60 * 1000));
+
+data.forEach((e,i) => {
+  data[i].jsDate = new Date(data[i].jsDate)
+})
