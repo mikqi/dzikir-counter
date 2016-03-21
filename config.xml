@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.dzikircounter901510" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>dzikir-counter</name>
+<widget id="com.codelabs.dzikircounter" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Dzikir Counter</name>
   <description>
-        An Ionic Framework and Cordova project.
+        Dzikir Counter adalah sebuah aplikasi mobile yang dapat membantu kita dalam berdzikir dan dapat membantu dalam menambah wawasan tentang ilmu agama.
     </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+  <author email="Muhammad.Rivki@outlook.com" href="http://codelabs.unikom.ac.id/">
+      Nuha Team
     </author>
   <content src="index.html"/>
   <access origin="*"/>
