@@ -9921,6 +9921,12 @@ ion-slide {
 .dzikir-item p {
   margin-bottom: 0; }
 
+.clickable {
+  background-color: #69D2E7;
+  color: #f8f8f8;
+  margin-bottom: 0;
+  padding: 5px 10px; }
+
 .artikel-container {
   display: flex;
   justify-content: center;
@@ -9934,13 +9940,21 @@ ion-slide {
   height: 45%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   margin: 5px 2px 0 2px; }
 
 .artikel-item h2,
 .artikel-item p {
   margin-bottom: 0; }
+
+.artikel-item--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 15px; }
 
 .artikel-item h2 {
   font-size: 1.7em;
@@ -9953,7 +9967,7 @@ ion-slide {
   cursor: pointer; }
 
 .artikel-info {
-  color: #69D2E7;
+  color: #547980;
   font-weight: 300;
   width: 100%;
   text-align: center; }
@@ -10056,7 +10070,8 @@ ion-slide {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-content: center; }
+  align-content: center;
+  width: 100%; }
 
 .asmaul .item .h2 {
   font-size: 2em; }
@@ -10067,7 +10082,8 @@ ion-slide {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  padding-top: 10px; }
 
 .asmaul-number {
   width: 30%;

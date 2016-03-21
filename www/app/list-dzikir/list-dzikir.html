@@ -2,9 +2,27 @@
   <ion-content>
     <div class="dzikir-container">
 
-      <div class="dzikir-item shadow-1" ng-repeat="l in list.ListDzikir" ng-click="l.url()">
-        <h2> {{l.arab}} </h2>
-        <p>{{l.latin}}</p>
+      <!-- <div class="dzikir-item shadow-1 {{l.klass}}" ng-repeat="l in list.ListDzikir" ng-click="l.url()">
+        <div class="dzikir-left">
+
+        </div>
+
+        <div class="dzikir-right">
+          <h2> {{l.arab}} </h2>
+          <p>{{l.latin}}</p>
+
+        </div>
+      </div> -->
+
+      <div class="list card asmaul" ng-repeat="l in list.ListDzikir">
+        <div class="asmaul-number">
+          <h2>{{l.urutan}}</h2>
+        </div>
+        <div class="asmaul-content">
+          <h2>{{l.arab}}</h2>
+          <p class="latin">{{l.latin}}</p>
+          <h2 class="clickable" ng-if="l.klass !== ''">{{l.klass}}</h2>
+        </div>
       </div>
 
     </div>
