@@ -39,6 +39,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "shadow";
 @import "counter";
 @import "asmaul";
+@import "about";
 
 .bar-header {
     border: 0px !important;
@@ -66,4 +67,12 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 .bg-energized {
   background-color: $energized;
+}
+
+.popover {
+  height: 60px;
+}
+
+.popover-list {
+  color: $calm;
 }

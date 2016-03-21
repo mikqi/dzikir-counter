@@ -42,6 +42,17 @@ angular.module('DzikirCounter', ['ionic', 'chart.js', 'ngCordova'])
       templateUrl: 'app/menu/menu.html',
       controller: 'MenuCtrl as menu',
     })
+
+    .state('main.about', {
+      url: '/about',
+      views: {
+        pageContent: {
+          templateUrl: 'app/about/about.html',
+          controller: 'AboutCtrl as about',
+        },
+      },
+    })
+
     .state('main.listdzikir', {
       url: '/list',
       views: {

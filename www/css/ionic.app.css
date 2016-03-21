@@ -10102,6 +10102,43 @@ ion-slide {
     .asmaul-content .latin::after {
       content: ' )'; }
 
+.about-container {
+  background-color: #69D2E7; }
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%; }
+
+.about-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  color: #f8f8f8; }
+
+.about-logo {
+  width: 256px;
+  height: 256px; }
+
+.powered {
+  border-top: 1px solid #f8f8f8;
+  padding-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center; }
+  .powered p {
+    color: #f8f8f8;
+    text-align: center;
+    margin-bottom: 0; }
+  .powered img {
+    width: 150px; }
+
 .bar-header {
   border: 0px !important;
   border-bottom-color: transparent !important;
@@ -10122,3 +10159,9 @@ ion-slide {
 
 .bg-energized {
   background-color: #EDC951; }
+
+.popover {
+  height: 60px; }
+
+.popover-list {
+  color: #69D2E7; }
