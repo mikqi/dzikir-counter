@@ -17,6 +17,7 @@ angular.module('DzikirCounter')
 
     $scope.openPopover = function ($event) {
       $scope.popover.show($event);
+      console.log($event);
     };
 
     $scope.closePopover = function () {

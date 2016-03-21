@@ -54,19 +54,19 @@ function ListDzikirService($state) {
       latin: 'Ilaahii robbii anta maulaanaa.',
     }, {
       urutan: '9',
-      klass: 'Do Dzikir',
+      klass: 'Lakukan Dzikir',
       arab: 'سُبْحَانَ اللهِ',
       latin: 'SUB\'HANALLOH',
       url: goTo,
     }, {
       urutan: '10',
-      klass: 'Do Dzikir',
+      klass: 'Lakukan Dzikir',
       arab: 'اَلْحَمْدُ ِللهِ',
       latin: 'AL\'HAMDULILLAH',
       url: goTo,
     }, {
       urutan: '11',
-      klass: 'Do Dzikir',
+      klass: 'Lakukan Dzikir',
       arab: 'اللهُ أَكْبَرُ',
       latin: 'ALLOHU AKBAR',
       url: goTo,

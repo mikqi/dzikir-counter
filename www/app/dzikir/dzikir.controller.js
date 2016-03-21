@@ -2,8 +2,8 @@ angular
   .module('DzikirCounter')
   .controller('DzikirCtrl', DzikirCtrl);
 
-DzikirCtrl.$inject = ['$state', '$stateParams', 'DzikirService'];
-function DzikirCtrl($state, $stateParams, DzikirService) {
+DzikirCtrl.$inject = ['$state', '$stateParams', 'DzikirService', '$cordovaVibration'];
+function DzikirCtrl($state, $stateParams, DzikirService, $cordovaVibration) {
   var vm = this;
   vm.dzikir = {
     arab: $stateParams.arab,
@@ -17,7 +17,7 @@ function DzikirCtrl($state, $stateParams, DzikirService) {
   vm.counter = counter;
 
   function counter() {
-    if (vm.count > 3) {
+    if (vm.count > 31) {
 
       switch (vm.dzikir.latin.split(/[ |']/g).join('').toLowerCase()) {
         case 'alhamdulillah':
@@ -33,7 +33,7 @@ function DzikirCtrl($state, $stateParams, DzikirService) {
 
       DzikirService.dzikir.addData();
 
-      // $cordovaVibration.vibrate(700);
+      $cordovaVibration.vibrate(700);
       vm.count = 33;
       setTimeout(function () {
         $state.go('main.listdzikir');
@@ -41,7 +41,7 @@ function DzikirCtrl($state, $stateParams, DzikirService) {
 
       return vm.count;
     } else {
-      // $cordovaVibration.vibrate(300);
+      $cordovaVibration.vibrate(300);
       vm.count += 1;
       return vm.count;
     }

@@ -2,7 +2,7 @@ angular
   .module('DzikirCounter')
   .controller('AboutCtrl', AboutCtrl);
 
-AboutCtrl.$inject = [];
-function AboutCtrl() {
-
+AboutCtrl.$inject = ['$scope'];
+function AboutCtrl($scope) {
+  $scope.popover.hide();
 }
