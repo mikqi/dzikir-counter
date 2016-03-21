@@ -9927,6 +9927,9 @@ ion-slide {
   margin-bottom: 0;
   padding: 5px 10px; }
 
+.dzikir-latin {
+  text-transform: lowercase; }
+
 .artikel-container {
   display: flex;
   justify-content: center;
