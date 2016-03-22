@@ -4,3 +4,11 @@
 node_modules/
 platforms/
 plugins/
+DzikirCounter-armv7.apk
+DzikirCounter-x86.apk
+dzikir-counter-armv7.apk
+dzikir-counter-x86.apk
+dzikir-counter-armv7.keystore
+dzikir-counter-x86.keystore
+lodash
+

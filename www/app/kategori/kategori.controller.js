@@ -2,13 +2,24 @@ angular
   .module('DzikirCounter')
   .controller('KategoriCtrl', KategoriCtrl);
 
-KategoriCtrl.$inject = ['$state', '$stateParams', 'KategoriService', '$ionicLoading'];
-function KategoriCtrl($state, $stateParams, KategoriService, $ionicLoading) {
+KategoriCtrl.$inject = ['$state', '$stateParams', 'KategoriService', '$ionicLoading', '$cordovaToast'];
+function KategoriCtrl($state, $stateParams, KategoriService, $ionicLoading, $cordovaToast) {
   var vm = this;
 
   $ionicLoading.show({
     template: '<ion-spinner icon="android" class="spinner-calm"> </ion-spinner>',
   });
+
+  setTimeout(function () {
+
+    if (vm.articles) {
+      $ionicLoading.hide();
+      $cordovaToast.showLongCenter('Cek koneksi internet anda').then(function (success) {
+        $state.go('main.article');
+      });
+    }
+
+  }, 15000);
 
   KategoriService.getArticles($stateParams.kategori).then(getList);
   function getList(data) {
